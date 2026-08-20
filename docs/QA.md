@@ -146,6 +146,8 @@ Looking bad and lying are different.
 
 ### Format
 
+**The round opens with `> Read: <sha> · <what was opened>`** (`WORKFLOW.md`). Each finding below carries its own reproduction path; that line carries what the round as a whole was looking at, and when.
+
 ```
 What I did        — reproduction path: account, location, action
 What I saw        — facts only

@@ -103,6 +103,8 @@ Naming, file placement, plain duplication, function length, micro-performance (u
 
 ## How to write a finding
 
+**The report opens with `> Read: <sha> · <what was opened>`** (`WORKFLOW.md`). Individual findings carry `Where:`; that line carries the boundary of the whole pass — what moved under you, and how far the claims may reach.
+
 State **who comes to believe what falsehood, or what becomes unrecoverable**. If neither can be written, it is lens 5.
 
 The lens classifies; it does not decide. **Every finding carries exactly one decision — BLOCKING or NON_BLOCKING** (`WORKFLOW.md`). Lenses 1–3 are BLOCKING. Lens 4 is BLOCKING when you can name the change it makes silently wrong, and NON_BLOCKING when you cannot. Lens 5 is always NON_BLOCKING.
