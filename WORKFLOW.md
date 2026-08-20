@@ -205,6 +205,28 @@ Do not repeat a general code review.
 
 ---
 
+## Reports state what was read
+
+Agents share one working tree and fix concurrently. **The target moves while it is being read.**
+
+Every report about another agent's work opens with one line:
+
+```text id="rd4tsq"
+> Read: <sha> · <what was opened>
+```
+
+That line stops two failures that look alike and are not.
+
+**Speaking from a stale read.** With the sha, the author answers "that was fixed after it" at once. Without it both sides guess, and withdrawing a block costs a round trip — the reviewer re-reads, the author re-explains, and nothing in the code changed.
+
+**Speaking wider than what was read.** Naming what was opened makes the writer catch themselves: "nobody here has ever exercised that path" cannot sit directly below "opened one controller". To widen a claim, open the wider place. Inferring what a server does from what a screen showed is the same move.
+
+**The Orchestrator opens the evidence before relaying.** When passing along another agent's judgment would change **what a third agent works on next**, read the basis directly. This is not redoing the judgment — only checking its extent, and it is usually one line. An Orchestrator that relays without this is an amplifier: one agent's overreach becomes another agent's work order.
+
+A report missing the line goes back. **A format with no rule for its absence reads as a suggestion.**
+
+---
+
 ## Findings and Rework
 
 Findings are either:
